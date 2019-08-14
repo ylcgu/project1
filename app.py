@@ -12,11 +12,12 @@ import pandas as pd
 
 
 ########### Define your variables ######
-myheading = "This is a title"
+myheading = "Best Craft Beers in DC"
+mysubheading = "August 2019"
 tabtitle = 'python rocks'
 filename = 'dc-breweries.csv'
 sourceurl = 'https://www.beeradvocate.com/beer/top-rated/us/dc/'
-githublink = 'https://github.com/austinlasseter/dash-datatable-example'
+githublink = 'https://github.com/austinlasseter/dash-table-example'
 
 ########### Set up the data
 df = pd.read_csv(filename)
@@ -30,6 +31,7 @@ app.title=tabtitle
 ########### Set up the layout
 app.layout = html.Div(children=[
     html.H1(myheading),
+    html.H3(mysubheading),
 
     dash_table.DataTable(
         id='table',
