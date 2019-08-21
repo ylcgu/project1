@@ -12,7 +12,7 @@ myheading = "Food Consumption by Month"
 mysubheading = "May-September 2019"
 tabtitle = 'Healthy diet'
 filename = 'foodconsumption.csv'
-sourceurl = 
+sourceurl = 'https://www.beeradvocate.com/beer/top-rated/us/dc/'
 githublink = 'https://github.com/ylcgu/dash-table-example'
 
 ########### Set up the data
