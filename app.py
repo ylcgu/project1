@@ -15,8 +15,8 @@ import pandas as pd
 myheading = "Food Consumption by Month"
 mysubheading = "May-September 2019"
 tabtitle = 'Healthy diet'
-filename = 'dc-breweries.csv'
-githublink = 'https://github.com/ylcgu/dash-table-example/blob/master/Food%20Consumption.csv'
+filename = 'foodconsumption.csv'
+githublink = 'https://github.com/ylcgu/dash-table-example/blob/master/foodconsumption.csv'
 
 ########### Set up the data
 df = pd.read_csv(filename)
