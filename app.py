@@ -7,15 +7,12 @@ import pandas as pd
 
 
 
-
-
-
-
 ########### Define your variables ######
 myheading = "Food Consumption by Month"
 mysubheading = "May-September 2019"
 tabtitle = 'Healthy diet'
 filename = 'foodconsumption.csv'
+sourceurl = 
 githublink = 'https://github.com/ylcgu/dash-table-example'
 
 ########### Set up the data
