@@ -12,7 +12,7 @@ mysubheading = "Data in 2017"
 tabtitle = 'AirBnb Price by Areas in New York City'
 filename = 'CleanedData.csv'
 sourceurl = 'https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data/'
-githublink = 'https://github.com/ylcgu/midterm_project/'
+githublink = 'https://github.com/ylcgu/project1'
 
 ########### Set up the data
 df = pd.read_csv(filename)
