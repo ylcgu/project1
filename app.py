@@ -58,13 +58,12 @@ mydata3 = go.Bar(x = results2.loc['Private room'].index,
 mydata4 = go.Bar(x = results2.loc['Shared room'].index,
                   y = results2.loc['Shared room']['room'],
                  name = 'Shared room', )
-  mylayout2 = go.Layout(title = 'Geographic distribution of rooms',
+mylayout2 = go.Layout(title = 'Geographic distribution of rooms',
                         xaxis= dict(title='Areas_in_NYC'),
                         yaxis= dict(title='Rooms number')
                         )
 #
 fig=go.Figure(data=[mydata2,mydata2,mydata3], layout=mylayout2)
-iplot(fig)
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
