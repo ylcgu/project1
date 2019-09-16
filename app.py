@@ -8,12 +8,12 @@ import pandas as pd
 
 
 ########### Define your variables ######
-myheading = "Food Consumption by Month"
-mysubheading = "May-September 2019"
-tabtitle = 'Healthy diet'
-filename = 'foodconsumption.csv'
-sourceurl = 'https://www.beeradvocate.com/beer/top-rated/us/dc/'
-githublink = 'https://github.com/ylcgu/dash-table-example'
+myheading = "AirBnb Price Per Night"
+mysubheading = "Data in 2017"
+tabtitle = 'AirBnb Price by Areas in New York City'
+filename = 'CleanedData.csv'
+sourceurl = 'https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data/'
+githublink = 'https://github.com/ylcgu/midterm_project/'
 
 ########### Set up the data
 df = pd.read_csv(filename)
