@@ -21,42 +21,31 @@ print(results.sort_values(ascending=False))
 #
 # # In[143]:
 #
-# import plotly as py
-# import plotly.graph_objs as go
-# from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
-# init_notebook_mode(connected=True) #this is to diplay figures in notebook
-# import plotly as py
-# import plotly.graph_objs as go
-# from plotly.graph_objs import*
+
 #
 #
 # # In[150]:
 #
 #
-# # displa with plotly
-# mydata = go.Bar(
-#  x =results.index,
-# y= results.values,
-# marker={'color': ['blue', 'red', 'green', 'yellow']})
-# mylayout = go.Layout(
-# title ='Airbnb Price Per Night',
-# xaxis= dict(title='Areas_in_NYC'),
-# yaxis= dict(title='Price_per_night')
-# )
-# myfigure = go.Figure([mydata],mylayout)
-# myfigure
+
+mydata = go.Bar(
+        x =results.index,
+        y= results.values,
+        marker={'color': ['blue', 'red', 'green', 'yellow']})
+mylayout = go.Layout(
+        title ='Airbnb Price Per Night',
+        xaxis= dict(title='Areas_in_NYC'),
+        yaxis= dict(title='Price_per_night'))
+myfigure = go.Figure([mydata],mylayout)
+myfigure
+
 #
-# # In[157]:
+results2= df.groupby(['room','area'])['room'].count()
+print(results.sort_values(ascending=False))
 #
-# results2= df.groupby(['room','area'])['room'].count()
-# print(results.sort_values(ascending=False))
-#
-#
-# # In[175]:
-#
-#
-# results2= df.groupby(["room", "area"])["room"].count().sort_values(ascending=False)
-# results2 = pd.DataFrame(results2)
+
+#results2= df.groupby(["room", "area"])["room"].count().sort_values(ascending=False)
+#results2 = pd.DataFrame(results2)
 # results2
 #
 #
