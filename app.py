@@ -11,7 +11,7 @@ myheading = "AirBnbs in Mahanttan is very expensive!!!"
 mysubheading = "Data in 2017"
 tabtitle = 'AirBnb Price by Areas in New York City'
 filename = 'CleanedData.csv'
-sourceurl = 'https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data/'
+sourceurl = 'https://github.com/ylcgu/project1/CleanedData.csv'
 githublink = 'https://github.com/ylcgu/project1'
 
 ########### Set up the data
