@@ -8,10 +8,10 @@ import pandas as pd
 
 ########### Define your variables ######
 myheading = "AirBnbs in Mahanttan is very expensive!!!"
-# tabtitle = 'AirBnb Price by Areas in New York City'
-# filename = 'CleanedData.csv'
-# sourceurl = 'https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data/'
-# githublink = 'https://github.com/ylcgu/project1'
+tabtitle = 'AirBnb Price by Areas in New York City'
+filename = 'CleanedData.csv'
+sourceurl = 'https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data/'
+githublink = 'https://github.com/ylcgu/project1'
 #
 # ########### Set up the data
 # df = pd.read_csv(filename)
@@ -45,7 +45,7 @@ myheading = "AirBnbs in Mahanttan is very expensive!!!"
 # )
 # myfigure = go.Figure([mydata],mylayout)
 # myfigure
-# 
+#
 # # In[157]:
 #
 # results2= df.groupby(['room','area'])['room'].count()
