@@ -11,7 +11,7 @@ myheading = "AirBnbs in Mahanttan is very expensive!!!"
 mysubheading = "Data in 2017"
 tabtitle = 'AirBnb Price by Areas in New York City'
 filename = 'CleanedData.csv'
-sourceurl = 'https://github.com/ylcgu/project1/CleanedData.csv'
+sourceurl = 'https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data/'
 githublink = 'https://github.com/ylcgu/project1'
 
 ########### Set up the data
@@ -20,9 +20,7 @@ df = pd.read_csv(filename)
 results= df.groupby(['area'])['price'].mean()
 print(results.sort_values(ascending=False))
 
-
 # In[143]:
-
 
 import plotly as py
 import plotly.graph_objs as go
@@ -49,9 +47,7 @@ yaxis= dict(title='Price_per_night')
 myfigure = go.Figure([mydata],mylayout)
 myfigure
 
-
 # In[157]:
-
 
 results2= df.groupby(['room','area'])['room'].count()
 print(results.sort_values(ascending=False))
@@ -63,9 +59,6 @@ print(results.sort_values(ascending=False))
 results2= df.groupby(["room", "area"])["room"].count().sort_values(ascending=False)
 results2 = pd.DataFrame(results2)
 results2
-
-
-# In[176]:
 
 
 mydata2 = go.Bar(x = results2.loc['Entire home/apt'].index,
@@ -86,29 +79,11 @@ fig=go.Figure(data=[mydata2,mydata2,mydata3], layout=mylayout2)
 iplot(fig)
 
 ########### Initiate the app
+########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 app.title=tabtitle
-
-########### Set up the layout
-app.layout = html.Div(children=[
-    html.H1(myheading),
-    html.H3(mysubheading),
-
-    dash_table.DataTable(
-        id='table',
-        columns=[{"name": i, "id": i} for i in df.columns],
-        data=df.to_dict('records'),
-    ),
-
-    html.A('Code on Github', href=githublink),
-    html.Br(),
-    html.A("Data Source", href=sourceurl),
-    html.Br(),
-    html.A("Plotly Dash", href='https://plot.ly/python/pie-charts/')
-    ]
-)
 
 ############ Deploy
 if __name__ == '__main__':
