@@ -7,7 +7,7 @@ import pandas as pd
 
 
 ########### Define your variables ######
-myheading = "AirBnbs in Mahanttan is very expensive!!!"
+myheading = "AirBnBs in Manhattan is very expensive!!!"
 tabtitle = 'AirBnb Price by Areas in New York City'
 filename = 'CleanedData.csv'
 sourceurl = 'https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data/'
