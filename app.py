@@ -14,9 +14,9 @@ sourceurl = 'https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data/'
 githublink = 'https://github.com/ylcgu/project1'
 #
 # ########### Set up the data
-# df = pd.read_csv(filename)
+df = pd.read_csv(filename)
 #
-# results= df.groupby(['area'])['price'].mean()
+results= df.groupby(['area'])['price'].mean()
 # print(results.sort_values(ascending=False))
 #
 # # In[143]:
