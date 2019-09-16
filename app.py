@@ -63,7 +63,7 @@ mylayout2 = go.Layout(title = 'Geographic distribution of rooms',
                         yaxis= dict(title='Rooms number')
                         )
 #
-fig=go.Figure(data=[mydata2,mydata2,mydata3], layout=mylayout2)
+fig=go.Figure(data=[mydata2,mydata3,mydata4], layout=mylayout2)
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
