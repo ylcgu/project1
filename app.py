@@ -16,8 +16,7 @@ githublink = 'https://github.com/ylcgu/project1'
 # ########### Set up the data
 df = pd.read_csv(filename)
 #
-results= df.groupby(['area'])['price'].mean()
-print(results.sort_values(ascending=False))
+results= df.groupby(['area'])['price'].mean().sort_values().ascending=False
 #
 # # In[143]:
 #
